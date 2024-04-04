@@ -2,15 +2,16 @@
 import './App.css';
 import ListHooks from "./components/ListHooks";
 import {Routes,Route} from "react-router-dom";
-import EditProduct from "./components/EditProduct";
-import DetailProduct from "./components/DetailProduct";
+import HookReducer from "./components/HookReducer";
+import CustomHook from "./components/CustomHook";
+
 
 function App() {
   return (
       <Routes>
         <Route path='/' element={<ListHooks/>} />
-        <Route path='/edit' element={<EditProduct/>} />
-        <Route path='/detail' element={<DetailProduct/>} />
+        <Route path='/r' element={<HookReducer/>} />
+        <Route path='/c' element={<CustomHook/>} />
       </Routes>
   );
 }
